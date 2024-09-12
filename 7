@@ -1,0 +1,18 @@
+#include <iostream>
+#include <limits> 
+using namespace std;
+
+int main() {
+    double a = 2;
+    double b = 1;
+
+    if (a*b > b) {
+        cout << "true:" << a * b << " > " << b << endl;
+    } else {
+        cout << "false:" << a * b << "is not greater than" << b << endl;
+    }
+
+    cout << "Machine epsilon:" << numeric_limits<double>::epsilon() << endl;
+    
+    return 0;
+}
