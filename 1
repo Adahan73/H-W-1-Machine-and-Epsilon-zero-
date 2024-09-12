@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float epsilon = 1;
+
+    while (1+epsilon > 1) {
+        epsilon /= 2;
+    }
+    epsilon *= 2;
+    
+    cout << "Machine epsilon: " << epsilon << endl;
+
+    return 0;
+}
