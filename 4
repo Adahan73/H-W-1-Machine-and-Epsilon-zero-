@@ -1,15 +1,13 @@
 #include <iostream>
-#include <limits> 
 using namespace std;
 
 int main() {
-    double z = numeric_limits<double>::min(); 
+    double z = 0;
 
     while (2 * z > z) {
         z /= 10; 
     }
-
-    cout << "machine zero is: " << z << endl;
+    cout << "machine zero: " << z << endl;
     
     return 0;
 }
